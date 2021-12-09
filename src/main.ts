@@ -1,4 +1,11 @@
 import { createApp } from 'vue'
+import { setupRouter } from '@/router'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+async function start() {
+  const app = createApp(App)
+  // config router
+  setupRouter(app)
+  app.mount('#app')
+}
+start()
