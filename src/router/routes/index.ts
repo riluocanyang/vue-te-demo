@@ -1,7 +1,7 @@
-import type { AppRouteRecordRaw } from '@/router/types'
+import type { AppRouterRecordRaw } from '@/router/types'
 import { PageEnum } from '@/enums/pageEnum'
 
-export const RootRoute: AppRouteRecordRaw = {
+export const RootRoute: AppRouterRecordRaw = {
   path: '/',
   name: 'Root',
   redirect: PageEnum.BASE_HOME,
@@ -10,7 +10,7 @@ export const RootRoute: AppRouteRecordRaw = {
   },
 }
 
-export const LoginRoute: AppRouteRecordRaw = {
+export const LoginRoute: AppRouterRecordRaw = {
   path: '/login',
   name: 'Login',
   component: () => import('@/views/sys/login/Login.vue'),
@@ -19,7 +19,7 @@ export const LoginRoute: AppRouteRecordRaw = {
   },
 }
 
-export const HomeRoute: AppRouteRecordRaw = {
+export const HomeRoute: AppRouterRecordRaw = {
   path: '/home',
   name: 'Home',
   component: () => import('@/views/dashborad/Home/index.vue'),

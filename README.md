@@ -179,7 +179,33 @@ css:{
 ## 安装支持vue3语法的 vue-router
 yarn add vue-router@next
 
+## 安装vuex
+yarn add vuex@next
+
+## windicss
+yarn add vite-plugin-windicss windicss -D
+main.js
+// import 'virtual:windi.css'
+import 'virtual:windi-base.css'
+import 'virtual:windi-components.css'
+import 'virtual:windi-utilities.css'
 
 
 
 
+## 疑问
+### 钩子函数没触发，咋回事
+### @/router 红色波浪线
+解决方法：
+1、工作目录为根目录，且项目在第一位
+2、vite.config.json 中配置alias
+3、ts.config.json 中配置path 以及 include
+
+###  .vue  文件中 开头<template> 红色波浪线
+解决方法：
+.eslintrc.js 
+rules: {
+  'vue/multi-word-component-names': 'off',
+}
+
+### 
