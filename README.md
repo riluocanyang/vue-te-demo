@@ -190,6 +190,19 @@ import 'virtual:windi-base.css'
 import 'virtual:windi-components.css'
 import 'virtual:windi-utilities.css'
 
+## 安装pinia
+
+## 统一请求封装
+# 安装 axios
+yarn add axios -D
+# 安装 nprogress 用于请求 loading
+# 也可以根据项目需求自定义其它 loading
+yarn add nprogress -D
+# 类型声明，或者添加一个包含 `declare module 'nprogress'
+yarn add @types/nprogress -D
+
+
+
 
 
 
